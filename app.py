@@ -58,12 +58,12 @@ else:
                                                                        '10+ years'])  
 
    # Baris Ketiga
-   with st.container():
+    with st.container():
        col1, col2, col3 = st.columns(3)
-       with col1:
-           home_ownership = st.selectbox('Home Ownership',['Home Mortgage','Own Home', 'Rent', 'HaveMortgage'])
-       with col2:
-           purpose = st.selectbox('Purpose',['Home Improvements','Debt Consolidation', 
+    with col1:
+       home_ownership = st.selectbox('Home Ownership',['Home Mortgage','Own Home', 'Rent', 'HaveMortgage'])
+    with col2:
+       purpose = st.selectbox('Purpose',['Home Improvements','Debt Consolidation', 
                                              'Buy House', 'other',
                                              'Business Loan', 'Buy a Car',
                                              'major_purchase', 'Take a Trip',
@@ -71,8 +71,8 @@ else:
                                              'Medical Bills', 'wedding',
                                              'vacation', 'Educational Expenses',
                                              'moving', 'renewable_energy'])        
-       with col3:
-           bankruptcies = st.selectbox('Bankruptcies',[0,1,2,3,4,5,6,7])    
+    with col3:
+       bankruptcies = st.selectbox('Bankruptcies',[0,1,2,3,4,5,6,7])    
            
    
             
