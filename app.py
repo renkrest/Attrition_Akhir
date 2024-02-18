@@ -43,7 +43,7 @@ with st.container():
     with col1:
         age = st.number_input('Age', value=25)
     with col2:
-        business_travel = st.selectbox('Business Travel', ['None', 'Rarely', 'Frequently', 'Always'])
+        business_travel = st.selectbox('Business Travel', ['1', '2', '3'])
            
    # Baris Kedua
    with st.container():
