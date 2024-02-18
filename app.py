@@ -43,15 +43,14 @@ else:
     with col1:
         age = st.number_input('Age', value=25)
     with col2:
-        business_travel = st.selectbox('Business Travel', ['1', '2', '3'])
-           
+        business_travel = st.selectbox('Business Travel', ['1', '2', '3'])     
    # Baris Kedua
-   with st.container():
-       col1, col2 = st.columns(2)
-       with col1:
-           term = st.selectbox('Term',['Short Term','Long Term'])
-       with col2:
-           years_in_current_job = st.selectbox('Years in current job',['< 1 year', '1 year',
+    with st.container():
+        col1, col2 = st.columns(2)
+    with col1:
+        term = st.selectbox('Term',['Short Term','Long Term'])
+    with col2:
+        years_in_current_job = st.selectbox('Years in current job',['< 1 year', '1 year',
                                                                        '2 years', '3 years',
                                                                        '4 years', '5 years',
                                                                        '6 years', '7 years',
