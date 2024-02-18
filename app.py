@@ -41,9 +41,9 @@ else:
    with st.container():
        col1, col2 = st.columns(2)
        with col1:
-           loan_id = st.number_input('Loan ID', value=1012)
+           Age = st.number_input('Age', value=1012)
        with col2:
-           customer_id = st.number_input('Customer ID', value=1012)
+           Business Travel = st.number_input('BusinessTravel', value=1012)
 
            
    # Baris Kedua
