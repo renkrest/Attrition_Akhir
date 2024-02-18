@@ -38,13 +38,12 @@ if pilihan == 'Prediksi dari file csv':
         #st.markdown('File yang diupload kosong, silakan pilih file yang valid')
 else:
    # Baris Pertama
-   with st.container():
-       col1, col2 = st.columns(2)
-       with col1:
-           Age = st.number_input('Age', value=1012)
-       with col2:
-           BusinessTravel = st.number_input('BusinessTravel', value=1012)
-
+with st.container():
+    col1, col2 = st.columns(2)
+    with col1:
+        age = st.number_input('Age', value=25)
+    with col2:
+        business_travel = st.selectbox('Business Travel', ['None', 'Rarely', 'Frequently', 'Always'])
            
    # Baris Kedua
    with st.container():
