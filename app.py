@@ -79,41 +79,41 @@ else:
             
    # Baris Keempat
    with st.container():
-       col1, col2, col3 = st.columns(3)
-       with col1:
-            current_loan_amount = st.number_input('Current Loan Amount', value=400000.0)
-       with col2:
-            credit_score = st.number_input('Credit Score', value=750.0) 
-       with col3:
-            annual_income = st.number_input('Annual Income', value=1000000.0)
+        col1, col2, col3 = st.columns(3)
+   with col1:
+        current_loan_amount = st.number_input('Current Loan Amount', value=400000.0)
+   with col2:
+        credit_score = st.number_input('Credit Score', value=750.0) 
+   with col3:
+        annual_income = st.number_input('Annual Income', value=1000000.0)
        
    # Baris Kelima
    with st.container():
-       col1, col2, col3 = st.columns(3)
-       with col1:
-            monthly_debt = st.number_input('Monthly Debt', value=10000.0)
-       with col2:
-            years_of_credit_history = st.number_input('Years of Credit History', value=15.2) 
-       with col3:
-            months_since_last = st.number_input('Months since last delinquent', value=8.0)
+        col1, col2, col3 = st.columns(3)
+   with col1:
+        monthly_debt = st.number_input('Monthly Debt', value=10000.0)
+   with col2:
+        years_of_credit_history = st.number_input('Years of Credit History', value=15.2) 
+   with col3:
+        months_since_last = st.number_input('Months since last delinquent', value=8.0)
 
    # Baris Keenam
    with st.container():
-       col1, col2, col3 = st.columns(3)
-       with col1:
-            number_of_open_accounts = st.number_input('Number of Open Accounts', value=25.0)
-       with col2:
-            number_of_credit_problems = st.number_input('Number of Credit Problems', value=1) 
-       with col3:
-            current_credit_balance = st.number_input('Current Credit Balance', value=200000.0)
+        col1, col2, col3 = st.columns(3)
+   with col1:
+        number_of_open_accounts = st.number_input('Number of Open Accounts', value=25.0)
+   with col2:
+        number_of_credit_problems = st.number_input('Number of Credit Problems', value=1) 
+   with col3:
+        current_credit_balance = st.number_input('Current Credit Balance', value=200000.0)
 
    # Baris Kelima
    with st.container():
-       col1, col2 = st.columns(2)
-       with col1:
-            maximum_open_credit = st.number_input('Maximum Open Credit', value=350000.0)
-       with col2:
-            tax_liens = st.number_input('Tax Liens', value=1) 
+        col1, col2 = st.columns(2)
+   with col1:
+        maximum_open_credit = st.number_input('Maximum Open Credit', value=350000.0)
+   with col2:
+        tax_liens = st.number_input('Tax Liens', value=1) 
 
 
    # Inference
