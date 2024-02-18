@@ -38,7 +38,7 @@ if pilihan == 'Prediksi dari file csv':
         #st.markdown('File yang diupload kosong, silakan pilih file yang valid')
 else:
    # Baris Pertama
-with st.container():
+    with st.container():
     col1, col2 = st.columns(2)
     with col1:
         age = st.number_input('Age', value=25)
