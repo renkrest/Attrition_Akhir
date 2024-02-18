@@ -41,7 +41,7 @@ else:
     with st.container():
         col1, col2 = st.columns(2)
     with col1:
-        age = st.number_input('Age', value=25)
+        Age = st.number_input('Age', value=25)
     with col2:
         BusinessTravel = st.selectbox('Business Travel', ['1', '2', '3'])     
    # Baris Kedua
@@ -83,7 +83,7 @@ else:
 
    # Inference
     data = {
-           'Age': age,
+           'Age': Age,
            'Business Travel': BusinessTravel,
            'Distance From Home': DistanceFromHome,
            'Education': Education,
