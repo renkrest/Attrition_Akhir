@@ -117,7 +117,7 @@ else:
 
 
    # Inference
-   data = {
+    data = {
            'Loan ID': loan_id,
            'Customer ID': customer_id,
            'Term': term,
@@ -139,18 +139,18 @@ else:
            }
 
    # Tabel data
-   kolom = list(data.keys())
-   df = pd.DataFrame([data.values()], columns=kolom)
+    kolom = list(data.keys())
+    df = pd.DataFrame([data.values()], columns=kolom)
    
    # Melakukan prediksi
-   hasil = my_model.predict(df)
-   hasil_proba = my_model.predict_proba(df)
-   keputusan1 = round(float(hasil_proba[:,0])*100,2)
-   keputusan2 = round(float(hasil_proba[:,1])*100,2)
+    hasil = my_model.predict(df)
+    hasil_proba = my_model.predict_proba(df)
+    keputusan1 = round(float(hasil_proba[:,0])*100,2)
+    keputusan2 = round(float(hasil_proba[:,1])*100,2)
 
 
    # Memunculkan hasil di Web 
-   st.write('***'*10)
-   st.write('<center><b><i><u><h3>Customer Loan ID', str(loan_id),'</b></i></u></h3>', unsafe_allow_html=True)
-   st.write('<center><b><h4>Probabilitas bisa membayar = ', str(keputusan1),'%</b></h4>', unsafe_allow_html=True)
-   st.write('<center><b><h4>Probabilitas gagal bayar = ', str(keputusan2),'%</b></h4>', unsafe_allow_html=True)
+    st.write('***'*10)
+    st.write('<center><b><i><u><h3>Customer Loan ID', str(loan_id),'</b></i></u></h3>', unsafe_allow_html=True)
+    st.write('<center><b><h4>Probabilitas bisa membayar = ', str(keputusan1),'%</b></h4>', unsafe_allow_html=True)
+    st.write('<center><b><h4>Probabilitas gagal bayar = ', str(keputusan2),'%</b></h4>', unsafe_allow_html=True)
