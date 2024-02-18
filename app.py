@@ -69,7 +69,7 @@ else:
     with col2:
         MonthlyIncome = st.number_input('Monthly Income', value=10000.0)
     with col3:
-        EducationField = st.selectbox('EducationField',['Human Resources', 'Life Sciences', 'Marketing','Medical', 'Other', 'Technical Degree'])
+        EducationField = st.selectbox('Education Field',['Human Resources', 'Life Sciences', 'Marketing','Medical', 'Other', 'Technical Degree'])
        
    # Baris Kelima
     with st.container():
@@ -79,28 +79,23 @@ else:
     with col2:
         YearsAtCompany = st.number_input('Years At Company', value=5) 
     with col3:
-        OverTime = st.selectbox('EducationField',['Yes', 'No'])
+        OverTime = st.selectbox('Over Time',['Yes', 'No'])
 
    # Inference
     data = {
-           'Loan ID': loan_id,
-           'Customer ID': customer_id,
-           'Term': term,
-           'Years in current job': years_in_current_job,
-           'Home Ownership': home_ownership,
-           'Purpose': purpose,
-           'Bankruptcies': bankruptcies,
-           'Current Loan Amount': current_loan_amount, 
-           'Credit Score': credit_score,
-           'Annual Income': annual_income,
-           'Monthly Debt': monthly_debt,
-           'Years of Credit History': years_of_credit_history,
-           'Months since last delinquent': months_since_last,
-           'Number of Open Accounts': number_of_open_accounts,
-           'Number of Credit Problems': number_of_credit_problems,
-           'Current Credit Balance': current_credit_balance,
-           'Maximum Open Credit': maximum_open_credit,
-           'Tax Liens': tax_liens        
+           'Age': age,
+           'Business Travel': BusinessTravel,
+           'Distance From Home': DistanceFromHome,
+           'Education': Education,
+           'Satisfaction': JobSatisfaction,
+           'Involvement': JobInvolvement,
+           'Level': JobLevel,
+           'Marital Status': MaritalStatus, 
+           'Monthly Income': MonthlyIncome,
+           'Education Field': EducationField,
+           'Total Working Years': TotalWorkingYears,
+           'Years At Company': YearsAtCompany,
+           'Over Time': OverTime,
            }
 
    # Tabel data
