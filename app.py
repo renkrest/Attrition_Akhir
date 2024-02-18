@@ -39,7 +39,7 @@ if pilihan == 'Prediksi dari file csv':
 else:
    # Baris Pertama
     with st.container():
-    col1, col2 = st.columns(2)
+        col1, col2 = st.columns(2)
     with col1:
         age = st.number_input('Age', value=25)
     with col2:
