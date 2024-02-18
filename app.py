@@ -43,7 +43,7 @@ else:
        with col1:
            Age = st.number_input('Age', value=1012)
        with col2:
-           Business Travel = st.number_input('BusinessTravel', value=1012)
+           BusinessTravel = st.number_input('BusinessTravel', value=1012)
 
            
    # Baris Kedua
