@@ -78,13 +78,13 @@ else:
             
             
    # Baris Keempat
-   with st.container():
+    with st.container():
         col1, col2, col3 = st.columns(3)
-   with col1:
+    with col1:
         current_loan_amount = st.number_input('Current Loan Amount', value=400000.0)
-   with col2:
+    with col2:
         credit_score = st.number_input('Credit Score', value=750.0) 
-   with col3:
+    with col3:
         annual_income = st.number_input('Annual Income', value=1000000.0)
        
    # Baris Kelima
