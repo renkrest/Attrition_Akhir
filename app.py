@@ -56,7 +56,7 @@ else:
     with st.container():
        col1, col2, col3 = st.columns(3)
     with col1:
-       EnvironmentSatisfaction = st.selectbox('Satisfaction', ['1', '2', '3','4'])
+       JobSatisfaction = st.selectbox('Satisfaction', ['1', '2', '3','4'])
     with col2:
        JobInvolvement = st.selectbox('Involvement', ['1', '2', '3','4'])        
     with col3:
