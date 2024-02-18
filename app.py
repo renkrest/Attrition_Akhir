@@ -111,6 +111,5 @@ else:
 
    # Memunculkan hasil di Web 
     st.write('***'*10)
-    st.write('<center><b><i><u><h3>Customer Loan ID', str(loan_id),'</b></i></u></h3>', unsafe_allow_html=True)
-    st.write('<center><b><h4>Probabilitas bisa membayar = ', str(keputusan1),'%</b></h4>', unsafe_allow_html=True)
-    st.write('<center><b><h4>Probabilitas gagal bayar = ', str(keputusan2),'%</b></h4>', unsafe_allow_html=True)
+    st.write('<center><b><h4>Probabilitas Keluar = ', str(keputusan1),'%</b></h4>', unsafe_allow_html=True)
+    st.write('<center><b><h4>Probabilitas Stay di Perusahaan = ', str(keputusan2),'%</b></h4>', unsafe_allow_html=True)
