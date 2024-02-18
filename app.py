@@ -48,73 +48,38 @@ else:
     with st.container():
         col1, col2 = st.columns(2)
     with col1:
-        term = st.selectbox('Term',['Short Term','Long Term'])
+        DistanceFromHome = st.number_input('Distance From Home', value=5)
     with col2:
-        years_in_current_job = st.selectbox('Years in current job',['< 1 year', '1 year',
-                                                                       '2 years', '3 years',
-                                                                       '4 years', '5 years',
-                                                                       '6 years', '7 years',
-                                                                       '8 years', '9 years',
-                                                                       '10+ years'])  
+        Education = st.selectbox('Education', ['1', '2', '3','4','5'])
 
    # Baris Ketiga
     with st.container():
        col1, col2, col3 = st.columns(3)
     with col1:
-       home_ownership = st.selectbox('Home Ownership',['Home Mortgage','Own Home', 'Rent', 'HaveMortgage'])
+       EnvironmentSatisfaction = st.selectbox('Satisfaction', ['1', '2', '3','4'])
     with col2:
-       purpose = st.selectbox('Purpose',['Home Improvements','Debt Consolidation', 
-                                             'Buy House', 'other',
-                                             'Business Loan', 'Buy a Car',
-                                             'major_purchase', 'Take a Trip',
-                                             'Other', 'small_business',
-                                             'Medical Bills', 'wedding',
-                                             'vacation', 'Educational Expenses',
-                                             'moving', 'renewable_energy'])        
+       JobInvolvement = st.selectbox('Involvement', ['1', '2', '3','4'])        
     with col3:
-       bankruptcies = st.selectbox('Bankruptcies',[0,1,2,3,4,5,6,7])    
-           
-   
-            
-            
+       JobLevel = st.selectbox('Level',['1', '2', '3','4','5'])        
    # Baris Keempat
     with st.container():
         col1, col2, col3 = st.columns(3)
     with col1:
-        current_loan_amount = st.number_input('Current Loan Amount', value=400000.0)
+        MaritalStatus = st.selectbox('Marital Status',['Single', 'Married', 'Divorced'])    
     with col2:
-        credit_score = st.number_input('Credit Score', value=750.0) 
+        MonthlyIncome = st.number_input('Monthly Income', value=10000.0)
     with col3:
-        annual_income = st.number_input('Annual Income', value=1000000.0)
+        EducationField = st.selectbox('EducationField',['Human Resources', 'Life Sciences', 'Marketing','Medical', 'Other', 'Technical Degree'])
        
    # Baris Kelima
     with st.container():
         col1, col2, col3 = st.columns(3)
     with col1:
-        monthly_debt = st.number_input('Monthly Debt', value=10000.0)
+        TotalWorkingYears = st.number_input('Total Working Years', value=5)
     with col2:
-        years_of_credit_history = st.number_input('Years of Credit History', value=15.2) 
+        YearsAtCompany = st.number_input('Years At Company', value=5) 
     with col3:
-        months_since_last = st.number_input('Months since last delinquent', value=8.0)
-
-   # Baris Keenam
-    with st.container():
-        col1, col2, col3 = st.columns(3)
-    with col1:
-        number_of_open_accounts = st.number_input('Number of Open Accounts', value=25.0)
-    with col2:
-        number_of_credit_problems = st.number_input('Number of Credit Problems', value=1) 
-    with col3:
-        current_credit_balance = st.number_input('Current Credit Balance', value=200000.0)
-
-   # Baris Kelima
-    with st.container():
-        col1, col2 = st.columns(2)
-    with col1:
-        maximum_open_credit = st.number_input('Maximum Open Credit', value=350000.0)
-    with col2:
-        tax_liens = st.number_input('Tax Liens', value=1) 
-
+        OverTime = st.selectbox('EducationField',['Yes', 'No'])
 
    # Inference
     data = {
